@@ -14,7 +14,7 @@ create table Users(
 #  uso de constraint para validar estructura e informacion
 Delimiter $$
 	create procedure sp_create_users(in name_p varchar(50),
-									 in lastname_p varchar(50),
+				     in lastname_p varchar(50),
                                      in email_p varchar(50),
                                      in user_p varchar(25),
                                      in password_p varchar(35))

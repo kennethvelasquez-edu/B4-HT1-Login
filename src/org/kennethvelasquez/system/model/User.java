@@ -9,7 +9,7 @@ package org.kennethvelasquez.system.model;
  * @author STEPHRYS
  */
 public class User {
-    private String id_user;
+    private String idUser;
     private String email;
     private String name;
     private String lastname;
@@ -17,13 +17,34 @@ public class User {
     private String user;
     
     //Constructores
-
-    public String getId_user() {
-        return id_user;
+    public User(){
+        
     }
 
-    public void setId_user(String id_user) {
-        this.id_user = id_user;
+    public User(String idUser, String email, String name, String lastname, String password, String user) {
+        this.idUser = idUser;
+        this.email = email;
+        this.name = name;
+        this.lastname = lastname;
+        this.password = password;
+        this.user = user;
+    }
+
+    public User(String idUser, String email, String name, String lastname, String user) {
+        this.idUser = idUser;
+        this.email = email;
+        this.name = name;
+        this.lastname = lastname;
+        this.user = user;
+    }
+    
+
+    public String getIdUser() {
+        return idUser;
+    }
+
+    public void setIdUser(String idUser) {
+        this.idUser = idUser;
     }
 
     public String getEmail() {
